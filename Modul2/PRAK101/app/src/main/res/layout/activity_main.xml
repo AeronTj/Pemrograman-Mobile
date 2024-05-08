@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/t_header_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#372DBC"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Dice Roller"
+        app:titleTextColor="@color/design_default_color_background"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+        android:id="@+id/btn_roll"
+        android:layout_width="127dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:text="ROLL DICE"
+        android:textColor="#000000"
+        android:textColorLink="@color/design_default_color_secondary"
+        android:textSize="16sp"
+        app:backgroundTint="#00BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_img_first" />
+
+    <ImageView
+        android:id="@+id/iv_img_first"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_img_second"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/empty_dice" />
+
+    <ImageView
+        android:id="@+id/iv_img_second"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_img_first"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/empty_dice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
