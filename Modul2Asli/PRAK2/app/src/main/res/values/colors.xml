@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primcolor">#7B14FF</color>
+    <color name="seccolor">#7B14FF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primaryColor">#7B14FF</color>
+    <color name="primaryLightColor">#7B14FF</color>
+    <color name="primaryDarkColor">#7B14FF</color>
+    <color name="primaryTextColor">#7B14FF</color>
+</resources>
